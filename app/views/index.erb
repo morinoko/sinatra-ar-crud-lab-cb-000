@@ -1,0 +1,10 @@
+<h2>Recent Posts</h2>
+
+<% @posts.each do |post| %>
+
+<h3><%= post.name %></h3>
+<div class="content">
+  <%= post.content %>
+</div>
+
+<% end %>
