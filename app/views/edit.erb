@@ -1,5 +1,5 @@
 <h2>Edit Blog Post</h2>
-<form method="POST" action="/posts/<%= @post.id %>">
+<form method="post" action="/posts/<%= @post.id %>">
   <input id="hidden" type="hidden" name="_method" value="patch">
 
   <p><label for="post_name">Post Name:</label></p>

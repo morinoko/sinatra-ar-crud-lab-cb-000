@@ -2,3 +2,8 @@
 <div class="content">
   <%= @post.content %>
 </div>
+<br>
+<form method="post" action="/posts/<%= @post.id %>/delete">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input id="delete" type="submit" value="Delete">
+</form>

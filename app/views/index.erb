@@ -2,7 +2,7 @@
 
 <% @posts.each do |post| %>
 
-<h3><%= post.name %></h3>
+<h3><a href="/posts/<%= post.id %>"><%= post.name %></a></h3>
 <div class="content">
   <%= post.content %>
 </div>
